@@ -141,13 +141,13 @@ h4 {
 	z-index: -1;
 	width: 100%;
 }
-#hero_img {
+#hero-img {
 	width: 100%;
 }
 .logo {
 	width: 80px;
 }
-#logo_link {
+#logo-link {
 	padding-top: 5px;
 	justify-self: center;
 	align-self: center;
