@@ -1,0 +1,16 @@
+.cointainer {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.gray {
+width: 50%;
+height: 1000px;
+grid-column: 1;
+background-color: gray;
+}
+.white {
+width: 100%;
+height: 1000px;
+grid-column: 2;
+background-color: white;
+}
