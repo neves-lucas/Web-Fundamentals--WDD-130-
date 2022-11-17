@@ -260,6 +260,7 @@ h4 {
 /* Contact US */
 .contact-title {
 	color: black;
+	text-align: center;
 }
 form {
 	/* Center the form on the page */
@@ -269,6 +270,7 @@ form {
 	padding: 1em;
 	border: 1px solid #ccc;
 	border-radius: 1em;
+	grid-column: 4/8;
 	}
 
 	ul {
