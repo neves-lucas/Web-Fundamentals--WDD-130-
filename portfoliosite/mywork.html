@@ -27,25 +27,115 @@
 <main class="home-grid">
 
     <section class="website1-card">
-        <img class="card-img" src="images/wwrsite.jpg" alt="WWR website project">
+        <img id="myImg" src="images/wwrsite.jpg" alt="Whitewater Rafting Website" style="width:100%;max-width:500px">
         <h2>Whitewater Rafting Website</h2>
+        <!-- The modal-->
+        <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        </div>
     </section>
 
     <section class="website2-card">
-        <img class="card-img" src="images/samplesite2.png" alt="Portland Design Studio">
+        <img id="myImg2" src="images/samplesite2.png" alt="Portland Design Studio Website" style="width:100%;max-width:500px">
         <h2>Portland Design Studio Website</h2>
+        <!-- The modal-->
+        <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img02">
+        <div id="caption"></div>
+        </div>
     </section>
 
     <section class="website3-card">
-        <img class="card-img" src="images/samplesite3.png" alt="Oliver Russell">
+        <img id="myImg3" src="images/samplesite3.png" alt="Oliver Russell Website" style="width:100%;max-width:500px">
         <h2>Oliver Russell Website</h2>
+        <!-- The modal-->
+        <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img03">
+        <div id="caption"></div>
+        </div>
+        
     </section>
 
     <section class="website4-card">
-        <img class="card-img" src="images/samplesite4.jpg" alt="Advcash">
+        <img id="myImg4" src="images/samplesite4.jpg" alt="Advcash Website" style="width:100%;max-width:500px">
         <h2>Advcash Website</h2>
+        <!-- The modal-->
+        <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img04">
+        <div id="caption"></div>
+        </div>
     </section>
 		
+    <script>
+    function getElementsById(ids) {
+        var idList = ids.split(" ");
+        var results = [], item;
+        for (var i = 0; i < idList.length; i++) {
+            item = document.getElementById(idList[i]);
+            if (item) {
+                results.push(item);
+            }
+        }
+        return(results);
+}
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    
+    var img2 = document.getElementById("myImg2");
+    var modalImg2 = document.getElementById("img02");
+    var captionText = document.getElementById("caption");
+    img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg2.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    
+    var img3 = document.getElementById("myImg3");
+    var modalImg3 = document.getElementById("img03");
+    var captionText = document.getElementById("caption");
+    img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg3.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    
+    var img4 = document.getElementById("myImg4");
+    var modalImg4 = document.getElementById("img04");
+    var captionText = document.getElementById("caption");
+    img4.onclick = function(){
+    modal.style.display = "block";
+    modalImg4.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    </script>
+
+
 	<div class="button-box">
 		<a class="book" href=mailto:neves.lucas.r@gmail.com>I want a website</a>
 	</div>
