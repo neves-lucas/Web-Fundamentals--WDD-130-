@@ -68,6 +68,33 @@ footer p a:hover {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
 }
+.aboutme-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+#laptop-img {
+	grid-column: 2;
+	grid-row: 2;
+	margin-left: 10%;
+}
+#myphoto-img {
+	grid-column: 2;
+	grid-row: 1;
+	margin-left: 10%;
+}
+#mission-text, #aboutme-text {
+	grid-column: 1;
+	color: #F8F9FA;
+	text-align: center;
+	font-size: 55px;
+}
+#mission-text {
+	grid-row: 1;
+}
+#aboutme-text {
+	grid-row: 2;
+}
 body {
 	background-color: #212529;
 	font-family: Lato, sans-serif;
