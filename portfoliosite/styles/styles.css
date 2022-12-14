@@ -65,8 +65,42 @@ footer p a:hover {
 }
 .home-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
+	color: #F8F9FA;
+}
+.mywork-grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	color: #F8F9FA;
+}
+.website1-card {
+	grid-column: 2;
+	grid-row: 1;
+	align-items: left;
+}
+.website2-card {
+	grid-column: 4;
+	grid-row: 1;
+}
+.website3-card {
+	grid-column: 2;
+	grid-row: 2;
+}
+.website4-card {
+	grid-column: 4;
+	grid-row: 2;
+}
+.mywork-text {
+	grid-column: 2/5;
+	padding: 10%;
+}
+.mywork-text h2 {
+	text-align: center;
+}
+.mywork-text p {
+	text-indent: 80px;
 }
 .aboutme-grid {
 	display: grid;
@@ -121,11 +155,26 @@ body {
 	grid-row: 1;
 }
 .button-box {
-	grid-column: 1/2;
-	grid-row: 2/3;
-	text-align: center;
-}
-
+	border: 2px solid #F8F9FA;
+	background-color: #212529;
+	color: black;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	border-color: #e7e7e7;
+	color: black;
+	margin-left: 40%;
+	margin-top: 10%;
+  }
+  .button-box a {
+	color: #f8f9fa ;
+  }
+  .button-box:hover a {
+	color: #212529 ;
+  }
+  .button-box:hover {
+	background: #e7e7e7;
+  }
 
 
 /* Style the Image Used to Trigger the Modal */
@@ -164,7 +213,7 @@ body {
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption {
+  #caption, #caption2, #caption3, #caption4 {
 	margin: auto;
 	display: block;
 	width: 80%;
