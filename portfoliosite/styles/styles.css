@@ -161,23 +161,20 @@ body {
 .button-box {
 	border: 2px solid #F8F9FA;
 	background-color: #212529;
-	color: black;
+	color: #f8f9fa;
 	padding: 14px 28px;
 	font-size: 16px;
 	cursor: pointer;
 	border-color: #e7e7e7;
-	color: black;
 	margin-left: 40%;
 	margin-top: 10%;
   }
   .button-box a {
 	color: #f8f9fa ;
   }
-  .button-box:hover a {
-	color: #212529 ;
-  }
   .button-box:hover {
 	background: #e7e7e7;
+	color: #212529 
   }
 
 
